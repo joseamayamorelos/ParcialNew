@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de programa académico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow">
+        <div class="mb-8 flex justify-between items-center md:block md:relative">
+            <a href="index.html">
+                <img src="./src/img/Logo-Unicolombo.png" alt="UNICOLOMBO" class="h-10 md:absolute md:left-0">
+            </a>
+            <h1 class="text-lg md:text-2xl font-bold md:text-center">Registro de programa académico</h1>
+        </div>
+
+        <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div>
+                        <label for="programName" class="block text-sm font-medium text-gray-700 mb-1">
+                            Nombre Del Programa *
+                        </label>
+                        <input type="text" id="programName" name="programName" required
+                            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label for="institutionalCode" class="block text-sm font-medium text-gray-700 mb-1">
+                            Código Institucional *
+                        </label>
+                        <input type="text" id="institutionalCode" name="institutionalCode" required
+                            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label for="academicProgram" class="block text-sm font-medium text-gray-700 mb-1">
+                            Programa Académico *
+                        </label>
+                        <input type="text" id="academicProgram" name="academicProgram" required
+                            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label for="coordinator" class="block text-sm font-medium text-gray-700 mb-1">
+                            Coordinador Académico *
+                        </label>
+                        <select id="coordinator" name="coordinator" required
+                            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Seleccione un coordinador</option>
+                            <option value="coord1">Coordinador 1</option>
+                            <option value="coord2">Coordinador 2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="space-y-4">
+                    <div>
+                        <label for="abbreviatedName" class="block text-sm font-medium text-gray-700 mb-1">
+                            Nombre Abreviado
+                        </label>
+                        <input type="text" id="abbreviatedName" name="abbreviatedName"
+                            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label for="trainingLevel" class="block text-sm font-medium text-gray-700 mb-1">
+                            Nivel De Formación *
+                        </label>
+                        <select id="trainingLevel" name="trainingLevel" required
+                            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Seleccione un nivel</option>
+                            <option value="pregrado">Pregrado</option>
+                            <option value="posgrado">Posgrado</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="snies" class="block text-sm font-medium text-gray-700 mb-1">
+                            SNIES
+                        </label>
+                        <input type="text" id="snies" name="snies"
+                            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label for="status" class="block text-sm font-medium text-gray-700 mb-1">
+                            Estado *
+                        </label>
+                        <select id="status" name="status" required
+                            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Seleccione un estado</option>
+                            <option value="activo">Activo</option>
+                            <option value="inactivo">Inactivo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección inferior -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="internship" name="internship"
+                        class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="internship" class="text-sm font-medium text-gray-700">
+                        Realizar prácticas
+                    </label>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="w-24">
+                        <label for="duration" class="block text-sm font-medium text-gray-700 mb-1">
+                            Duración
+                        </label>
+                        <input type="number" id="duration" name="duration"
+                            class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <span class="text-sm font-medium text-gray-700 self-end mb-2">Meses</span>
+                </div>
+
+                <div class="w-full flex justify-center">
+                    <button type="submit"
+                      class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                      Agregar
+                  </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
