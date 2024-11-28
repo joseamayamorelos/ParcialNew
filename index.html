@@ -6,34 +6,36 @@
     <title>Unicolombo - Página Principal</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col">
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-6">
-          <a href="index.html">
-            <img src="./src/img/Logo-Unicolombo.png" alt="UNICOLOMBO" class="h-10">
-          </a>
+<body class="bg-gradient-to-r from-blue-500 via-teal-400 to-blue-500 min-h-screen flex flex-col">
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-6 py-8">
+            <a href="index.html">
+                <img src="./src/img/Logo-Unicolombo.png" alt="UNICOLOMBO" class="h-12 mx-auto">
+            </a>
         </div>
     </header>
 
-    <main class="flex-grow container mx-auto px-4 py-12">
-        <h1 class="text-3xl font-bold text-center mb-12">Bienvenido a Unicolombo</h1>
+    <main class="flex-grow container mx-auto px-6 py-16">
+        <h1 class="text-4xl font-bold text-center mb-12 text-white">Bienvenido</h1>
         
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <a href="registro-empleados.html" class="">
-                <h2 class="text-xl font-semibold mb-4">Registro de Empleado</h2>
+            <!-- Registro de Empleado -->
+            <a href="registro-empleados.html" class="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:scale-105 hover:shadow-xl">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Registro de Empleado</h2>
                 <div class="mt-4 text-blue-600 font-medium">Ir al formulario &rarr;</div>
             </a>
             
-            <a href="registro-programa-academico.html" class="">
-                <h2 class="text-xl font-semibold mb-4">Registro de Programa Académico</h2>
-                <div class="mt-4 text-blue-600 font-medium">Ir al formulario &rarr;</div>
+            <!-- Registro de Programa Académico -->
+            <a href="registro-programa-academico.html" class="bg-white rounded-lg shadow-lg p-8 transition-transform transform hover:scale-105 hover:shadow-xl">
+                <h2 class="text-2xl font-semibold text-teal-600 mb-4">Registro de Programa Académico</h2>
+                <div class="mt-4 text-teal-600 font-medium">Ir al formulario &rarr;</div>
             </a>
         </div>
     </main>
 
-    <footer class="bg-gray-800 text-white py-6">
+    <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 Unicolombo - Jean Galvis. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Unicolombo - Jose Amaya. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
